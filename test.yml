@@ -1,0 +1,18 @@
+steps:
+  - uses: actions/checkout@v3
+  - name: Compress action step
+    uses: ideacatlab/tarballmaker@v0.1.0
+    id: compress
+    with:
+      command: c
+      cwd: ./test
+      files: |
+        ./toCompress
+      outPath: yolo.tar.gz
+  - name: Extract files
+    uses: ideacatlab/tarballmaker@v0.1.0
+    id: extract
+    with:
+      command: x
+      cwd: ./extract
+      files: yolo.tar.gz
