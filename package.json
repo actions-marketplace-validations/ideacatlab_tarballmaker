@@ -13,7 +13,8 @@
     "dependencies": {
         "@actions/core": "1.10.0",
         "@actions/github": "^5.1.1",
-        "tar": "^6.1.15"
+        "tar": "^6.1.15",
+        "fs-minipass": "^3.0.2"
     },
     "devDependencies": {
         "@vercel/ncc": "^0.36.1"

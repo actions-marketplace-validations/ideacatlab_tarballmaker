@@ -1,11 +1,10 @@
-# Tar Github Action
+# Tar Github Action Bawler
 
-A cross platform github action for using tar.
-Works on Windows, Mac and Linux vms.
+A github action for using tar.
 
 ```yaml
-name: "Tar action"
-description: "A cross platform github action for using tar."
+name: "Tar Bawler"
+description: "A github action for using tar."
 inputs:
   cwd:
     description: "Current working directory for tar command"
@@ -24,13 +23,13 @@ outputs:
     description: "returns true if successful"
 ```
 
-# Usage:
+# Usage
 
 ```
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3
       - name: Compress action step
-        uses: a7ul/tar-action@v1.1.0
+        uses: ideacatlab/tarballmaker@v0.1.0
         id: compress
         with:
           command: c
@@ -39,7 +38,7 @@ outputs:
             ./toCompress
           outPath: yolo.tar.gz
       - name: Extract files
-        uses: a7ul/tar-action@v1.1.0
+        uses: ideacatlab/tarballmaker@v0.1.0
         id: extract
         with:
           command: x
