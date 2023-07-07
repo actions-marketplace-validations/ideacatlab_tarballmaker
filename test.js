@@ -1,5 +1,5 @@
 const tar = require("tar");
-const fs = require("fs-minipass");
+const fs = require("fs");
 
 const cwd = "./test";
 const files = "toCompress/";

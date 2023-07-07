@@ -1,6 +1,6 @@
 const core = require("@actions/core");
 const tar = require("tar");
-const fs = require("fs-minipass");
+const fs = require("fs");
 
 try {
     const cwd = core.getInput("cwd");
