@@ -15,7 +15,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3.5.3
             - name: Compress action step
-              uses: / # Uses an action in the root directory
+              uses: ./ # Uses an action in the root directory
               id: compress
               with:
                   command: c
@@ -33,7 +33,7 @@ jobs:
             - name: Create extract directory
               run: mkdir extract
             - name: Extract files
-              uses: /
+              uses: ./
               id: extract
               with:
                   command: x
