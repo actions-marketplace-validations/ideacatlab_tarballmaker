@@ -15,7 +15,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3.5.3
             - name: Compress action step
-              uses: ./test.yml
+              uses: .
               id: compress
               with:
                   command: c
